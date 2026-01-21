@@ -17,9 +17,9 @@ class PopulerFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_populer, container, false)
 
         // --- Definisi Buku ---
-        val book1 = Book(title = "Atomic Habits", author = "James Clear", rating = "Rating: 4.9/5", imageResId = 0)
-        val book2 = Book(title = "The Psychology of Money", author = "Morgan Housel", rating = "Rating: 4.8/5", imageResId = 0)
-        val book3 = Book(title = "Modul Pelatihan Manajemen", author = "Author Name", rating = "Rating: 4.7/5", imageResId = 0)
+        val book1 = Book(title = "Atomic Habits", author = "James Clear", rating = "Rating: 4.9/5", imageResId = R.drawable.anoter_habits)
+        val book2 = Book(title = "The Psychology of Money", author = "Morgan Housel", rating = "Rating: 4.8/5", imageResId = R.drawable.psykologi)
+        val book3 = Book(title = "Modul Pelatihan Manajemen", author = "Author Name", rating = "Rating: 4.7/5", imageResId = R.drawable.modul_pelatihan_manajemen)
 
         // --- Fungsi Helper untuk Aksi Klik ---
         val openBookDetail = { book: Book ->
