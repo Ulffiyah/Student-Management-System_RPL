@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".BookDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnPinjam">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/book_cover_detail"
+                android:layout_width="150dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/book_name_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book Name"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/book_rating_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating: 4.5/5" />
+
+            <TextView
+                android:id="@+id/book_number_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book Number: 12345" />
+
+            <TextView
+                android:id="@+id/loan_code_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loan Code: ABCDE" />
+
+            <TextView
+                android:id="@+id/loan_date_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loan Date: 2024-01-01" />
+
+            <TextView
+                android:id="@+id/return_date_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Return Date: 2024-01-15" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnPinjam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Pinjam" />
+
+</RelativeLayout>
